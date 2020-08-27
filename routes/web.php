@@ -11,7 +11,6 @@ use App\Http\Controllers\LanguageController;
 |
 */
 
-
 // Route url
 Route::get('/', 'TraversyController@home');
 Route::get('/traversy/about', 'TraversyController@about');
