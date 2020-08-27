@@ -448,6 +448,7 @@ $(window).on("load", function () {
     scrollTo: true
   })
 
+/*
   // tour steps
   tour.addStep('step-1', {
     text: 'Toggle Collapse Sidebar.',
@@ -544,6 +545,8 @@ $(window).on("load", function () {
       },
     ]
   });
+/**/
+
 
   if ($(window).width() > 1200 && !$("body").hasClass("menu-collapsed")) {
     tour.start()

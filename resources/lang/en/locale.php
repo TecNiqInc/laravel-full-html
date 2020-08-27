@@ -141,5 +141,6 @@ return [
     "I18n"=>"I18n",
     "Access Control"=>"Access Control",
     "File Manager" => "File Manager",
-    "Pricing" => "Pricing"
+    "Pricing" => "Pricing",
+    "Home" => "Home"
 ];

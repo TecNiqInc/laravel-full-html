@@ -37,4 +37,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    /// Traversy Media example code
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
 }

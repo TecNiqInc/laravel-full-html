@@ -6,7 +6,7 @@
 	Author: Pixinvent
 	Author URL: hhttp://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-
+/*
 $(document).ready(function () {
   displayTour();
   $(window).resize(displayTour)
@@ -112,3 +112,4 @@ $(document).ready(function () {
   }
 
 });
+*/

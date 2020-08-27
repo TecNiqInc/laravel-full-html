@@ -1,13 +1,19 @@
 {
   "menu": [
-      {
-          "url": "/",
-          "name": "Dashboard",
-          "slug": "dashboard",
-          "badge": "2",
-          "badgeClass": "badge badge-warning badge-pill float-right",
-          "icon": "feather icon-home"
-      },
+    {
+        "url": "/",
+        "name": "Home",
+        "slug": "home",
+        "icon": "feather icon-home"
+    },
+    {
+        "url": "/dashboard",
+        "name": "Dashboard",
+        "slug": "dashboard",
+        "badge": "2",
+        "badgeClass": "badge badge-warning badge-pill float-right",
+        "icon": "feather icon-home"
+    },
       {
         "url": "",
         "name": "User",

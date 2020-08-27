@@ -13,9 +13,16 @@ use App\Http\Controllers\LanguageController;
 
 
 // Route url
-Route::get('/', 'DashboardController@dashboardAnalytics');
+Route::get('/', 'TraversyController@home');
+Route::get('/traversy/about', 'TraversyController@about');
+Route::get('/traversy/services', 'TraversyController@services');
+
+Route::resource('/traversy/posts', 'PostsController');
+// Traversy Dashboard
+Route::get('/traversy', 'TraversyController@traversyDash');
 
 // Route Dashboards
+Route::get('/dashboard', 'DashboardController@dashboardAnalytics');
 Route::get('/dashboard-analytics', 'DashboardController@dashboardAnalytics');
 Route::get('/dashboard-ecommerce', 'DashboardController@dashboardEcommerce');
 
@@ -159,7 +166,7 @@ Route::get('/access-control', 'AccessController@index');
 Route::get('/access-control/{roles}', 'AccessController@roles');
 Route::get('/modern-admin', 'AccessController@home')->middleware('role:Admin');
 
-// Auth::routes();
+Auth::routes();
 
 Route::post('/login/validate', 'Auth\LoginController@validate_api');
 

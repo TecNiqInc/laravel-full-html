@@ -27,5 +27,11 @@ class DashboardController extends Controller
             'pageConfigs' => $pageConfigs
         ]);
     }
+    /// Traversy Media example code - addition to add authentication
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 }
 
